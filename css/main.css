@@ -32,14 +32,12 @@ h6 {
   margin: 0; }
 
 html {
-  width: 100vw;
   height: 100%;
   float: right; }
   html body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 100%;
     height: 100%;
     float: right;
     background-color: #ffffff; }
@@ -86,7 +84,7 @@ html {
 .main {
   float: right;
   position: relative;
-  width: 100%;
+  width: 1024px;
   max-width: 1024px;
   margin-right: calc((100% - 1024px) / 2);
   margin-left: calc((100% - 1024px) / 2);
@@ -94,46 +92,8 @@ html {
   margin-bottom: 30px;
   min-height: calc(100% - (160px + 200px)); }
 
-.modalContainer {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(51, 51, 51, 0.8);
-  z-index: +100; }
-  .modalContainer .modal {
-    background-color: #ffffff;
-    height: auto;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    padding: 20px;
-    border-radius: 5px;
-    width: 500px;
-    position: absolute;
-    float: right;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-right: calc((1024px - 500px) / 2);
-    margin-left: calc((1024px - 500px) / 2); }
-    .modalContainer .modal form {
-      width: 80%;
-      position: relative;
-      right: 50%;
-      -webkit-transform: translateX(50%);
-      -moz-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-      -o-transform: translateX(50%);
-      transform: translateX(50%); }
-      .modalContainer .modal form .input {
-        float: none;
-        width: 100%; }
-        .modalContainer .modal form .input label, .modalContainer .modal form .input input {
-          float: none; }
+.alert.red {
+  color: red; }
 
 @media screen and (min-width: 768px) {
   header {

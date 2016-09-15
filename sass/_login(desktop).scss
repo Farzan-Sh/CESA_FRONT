@@ -1,0 +1,124 @@
+.box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  margin: {
+    left:auto;
+    right:auto;
+  };
+  position: relative;
+  right:50%;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
+  box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  .input{
+    position: relative;
+    width: 80%;
+    margin: {
+      right:10%;
+      left:10%;
+      top: 10px;
+      bottom: 10px;
+    };
+    .label{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 40px;
+      max-width: 40px;
+      height: 40px;
+      background-color: $gray;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      i{
+        color: $darkGray;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        line-height: 40px;
+        width: 40px;
+        text-align: center;
+        overflow: hidden;
+      }
+    }
+    input{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 40px;
+      line-height: 40px;
+      width: calc(100% - 40px);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius:5px;
+      border:{
+        top:2px solid $gray;
+        bottom:2px solid $gray;
+        left:2px solid $gray;
+        right:none;
+      };
+      padding: {
+        right:20px;
+      };
+      outline: none;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+  }
+  .container{
+    width: 100%;
+    margin-top: 5px;
+    position: relative;
+    button , a{
+      position: relative;
+      right:50%;
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      transform: translateX(50%);
+      width: 100px;
+      span{
+        width: 100%;
+        text-align: center;
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+    p{
+      width: 100%;
+    }
+  }
+  #forgotPass{
+    text-align: center;
+    color: darken($gray , 15%);
+    font-size: 0.85em;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover{
+      color: $blue;
+    }
+  }
+  .alert{
+    font-size: 0.9em;
+    text-align: center;
+  }
+}

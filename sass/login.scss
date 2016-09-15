@@ -1,0 +1,9 @@
+@import "variables";
+
+@media screen and (min-width: $mobileSize){
+  @import "login(desktop)";
+}
+
+@media screen and (max-width: $mobileSize) {
+  @import "login(phone)";
+}
