@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/eventsView.css" rel="stylesheet" type="text/css">
+    <link href="libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="libraries/animation.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <img src="img/logo.png" class="logo">
+        <div class="contents">
+            <h2 class="title">
+                انـجـمـن عـلـمـی دانـشـکـده کـامـپـیـوتـر
+            </h2>
+            <h3 class="subTitle">
+                <span> دانشگاه </span>
+                <span> علم و صنعت </span>
+                <span> ایران </span>
+            </h3>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="contents">
+            <div class="content"> <a href="/">خانه</a></div>
+            <div class="content"><a href="/classes">کلاس ها و کارگاه ها</a></div>
+            <div class="content"><a href="/user/authenticate">ورود | عضویت</a></div>
+        </div>
+    </div>
+</header>
+<div class="main">
+    <article class="article">
+        <div class="contents">
+            <img src="img/lab.jpg" class="image">
+            <div class="description">
+                <div class="title">
+                    <h4 class="title">اینجا کسیست پنهان</h4>
+                </div>
+                <h5 class=" date ">
+                    <span>نوشته شده در :</span>
+                    <span>85/85/85</span>
+                </h5>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای</p>
+            </div>
+        </div>
+    </article>
+    <section id="wrapper" itemscope="" itemtype="https://schema.org/Blog">
+        <div id="content">
+            <h2>چرا پروژه آقای فوتبال رو با پایتون نوشتیم؟</h2>
+            <p>در شروع پروژه بود که دور هم جمع شدیم که راجع به بخش فنی صحبت کنیم. موضوعی که همه سرش توافق داشتن نوشتن یک وب سرویس REST  به عنوان سرور بود که هم اپلیکیشن هم وبسایت بتونن ازش استفاده کنن. مهم ترین موضوع مورد بحث این بود که سرور رو با چه زبانی توسعه بدیم؟ زبان ها و فریم‌ورک‌های زیادی کاندید بودن C#, Java, Golang, Python. در انتها Python انتخاب شد. اگه بخوایم صداق باشیم دلیل اصلی انتخاب پایتون تسلط همه بچه ها به این زبون بود. هدف از نوشتن این مطلب به اشتراک گذاری تجربه پروژه چند ماهمون با پایتون و مقایسه خوبی و بدی های این زبان با بقیه زبان هاست.</p>
+            <h3>پایتون چیه؟</h3>
+            <p>خیلی کوتاه بخوام بگم پایتون یک زبان <em>سطح بالای</em> چندید منظورست. تمرکز این زبان روی خوانایی بالا و سادگی بوده. کار با این زبان خیلی سادست و زمان پروژه رو به صورت محسوسی کاهش میده (این یعنی کاهش هزینه ها افزایش بهره وری)<br>
+                بزرگ ترین حسن های این زبان ابزار ها فریم ورک ها<sup class="footnote-ref" id="fnref-framework"><a href="#fn-framework" rel="footnote">1</a></sup> و ماژول<sup class="footnote-ref" id="fnref-module"><a href="#fn-module" rel="footnote">2</a></sup> های زیادی ه که برای پایتون نوشته شده فقط کافیه پیداشون کنید. تا با یه دستور نصب و آماده‌ی استفاده شن. ماژول های امنیتی و رمز گذاری مثل ماژول itsdangerous، ماژول های اتوماتیک سازی کار های ادمین مثل ماژول fabric یا  flask-script، ماژول های نام همزمان سازی کار ها مثل celery، ماژول های کمکی برای نوشتن وب سرویس های مانند jsl یا WTForms از نمونه این ماژول هایی بودند که توی پروژه آقای فوتبال بسیار به ما کمک کردند.</p>
+            <h3>آیا پایتون کند است؟</h3>
+            <p>اکثر افراد کند بودن پایتون را بزرگ ترین عیب این زبان می‌داند و از آمدن به سمت این زبان اجتناب می‌کنند. خب خودتان یک تست انجام دهیم. با زبان سریع C برنامه ای بنویسید که عدد ۲ به توان یک ملیون را در خروجی چاپ کند. خب اصولا این عدد ۳۰۱۰۳۰ رقمی در هیج متغیری از زبان C جا نمی‌شود. و اگر بار اولتان باشد بعد از صرف چندین ساعت و نوشتن چندیدن خط کد به جواب می‌رسید که مسلماٌ کد شما نمی‌تواند در ثانیه جواب بدهد این در حالی است که کد این برنامه در پایتون تنها یک خط است.</p>
+<pre><code>print 2**1000000
+</code></pre>
+            <p>که در ثانیه جواب را در خروجی چاپ میکند. (البته برنامه ای که توسط یک فرد مسلط به الگوریتم های بهینه علوم کامپیوتر با زبان C نوشته شود سریع تر جواب خواهد داد)<br>
+                باید توجه کنیم که یک مسئله سرعت در پیاده سازی است و مسئله دیگر سرعت اجرا و هنگامی که سرعت اجرا آنقدر ها مهم نیست برای کاهش هزینه ها عاقلانه است که سرعت اجرا فدای سرعت پیاده سازی شود. در ضمن کند بودن کد را میتوان با در اختیار داشتن سخت افزار بیشتر برطرف کرد.<sup class="footnote-ref" id="fnref-vertical scaling"><a href="#fn-vertical scaling" rel="footnote">3</a></sup> مثلا یک وب سرویس میتواند قابلیت توزیع شدن روی چند کامپیوتر را داشته باشد. سرور اینستاگرام<sup class="footnote-ref" id="fnref-instagram"><a href="#fn-instagram" rel="footnote">4</a></sup> و سایت کورا<sup class="footnote-ref" id="fnref-quora"><a href="#fn-quora" rel="footnote">5</a></sup> هر دو با پایتون نوشته شده اند و بار بسیار زیادی را پردازش می‌کنند. (طبق گفته مدیر فنی کورا، بخش هایی از این سایت با ++C نوشته شده است)</p>
+            <h3>رویا ها تبدیل به کابوس می‌شود</h3>
+            <p>پایتون در عین سادگی و راحتی که یک فرصت است می‌تواند در یک پروژه بزرگ تبدیل به تهدید بزرگ شود.<br>
+                <em>متغیر ها نوع ندارند</em>. یعنی دیگر هیچ کدام از دردسر های تعریف متغیر تبدیل نوع متغیر وجود ندارد. به یک تابعی که از ورودی عدد می‌گیرد میتوان هر چیزی فرستاد.</p>
+<pre><code>var1 = 2
+…
+var1 = “Hello”
+print var1
+
+def add(a,b):
+  return a + b
+…
+print add(1,2)
+print add(“Hello, “,”world!”)
+</code></pre>
+            <p>برای یک تازه کار بسیار دلنشین خواهد بود که بسیاری از خطا های زمان کامپایل دیگر وجود نخواهند داشت. برای افرادی که پایتون را به عنوان زبان اصلی خود فرا گرفته اند بسیار سخت است که به زبان هایی مانند Java برنامه بنویسند و حتی در مواردی دیده شده که این زبان ها را "چرت" نامیده اند!<br>
+                اما مشکلات بعد از چند ماه تازه شروع خواهند شد.</p>
+            <blockquote><p>"من نمی‌دونم چرا این تابع اررور میده؟ :o "</p>
+                <p>"ورودی این تابع چی بود من یادم نمیاد؟! :/ "</p>
+                <p>"عه این متغیر چرا اعشاری ه؟ مگه نباید عدد صحیح باشه؟ " </p>
+                <p>"چه جوری بفهمم این تابع چی برمیگردونه؟"</p>
+
+            </blockquote><p>پایتون کامپایل نمی‌شود. این یک مشخصه این زبان است، هم مزیت های خود را دارد هم معایب های خود. مانند زبان های دیگری که کامپایل نمی‌شوند مانند javascript یا ruby پایتون هم بسیار قدرتمند است و قابلیت های زیادی را به برنامه نویس می‌دهد. اما کامپایلر تعداد زیادی از خطا های شما را قبل از اجرا می‌گیرد در حالی که پایتون آن خطا هارا به زمان اجرا موکول می‌کند و تا آن خط از برنامه اجرا نشود شما ارروری دریافت نمی‌کنید.</p>
+            <blockquote><p>"دو ماه پیش سایت رو لانچ کردیم ولی نمی‌دونم چرا بعضی موقع ها 500<br>
+                internal server error می‌ده :/ "</p>
+
+            </blockquote><h3>سخن پایانی</h3>
+            <p> پایتون برای پروژه های کوتاه و فاز تحقیقاتی پروژه های بزرگ یک زبان بسیار عالی و قدرتمند است اما در پروژه های بلند مدت به جا های مریضی کشیده خواهد شد.<br>
+                یک برنامه نویس با تجربه پایتون را دوست ندارد در حالی که با پایتون در زمان کمی یک محصول خوب تولید می‌کند. یک برنامه نویس بی تجربه بسیار پایتون را دوست دارد و در زمان کوتاهی یک آشغال تولید می‌کند.</p>
+            <div class="footnotes">
+                <hr>
+                <ol><li dir="ltr" id="fn-framework"><p dir="ltr">Framework</p>
+                </li>
+                    <li dir="ltr" id="fn-module"><p dir="ltr">Module</p>
+                    </li>
+                    <li dir="ltr" id="fn-vertical scaling"><p dir="ltr">Vertical scaling</p>
+                    </li>
+                    <li dir="ltr" id="fn-instagram"><p dir="ltr">Instagram</p>
+                    </li>
+                    <li dir="ltr" id="fn-quora"><p dir="ltr">Quora</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer">
+        <div class="aboutUs">
+            <h3 class="title">
+                درباره ما
+            </h3>
+            <p class="content">
+                 و حومه و این حرفا است و بود و خواهد بود لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+            <h5 class="text blue">
+                <a href="#">
+                    درباره ما بیشتر بدون
+                </a>
+            </h5>
+        </div>
+        <div class="logoBox">
+            <img src="img/iust.png" class="logo">
+        </div>
+        <div class="contactUs">
+            <h3 class="title">
+                ارتباط با ما
+            </h3>
+            <ul class="social">
+                <li class="contents">
+                    <i class="fa fa-paper-plane text blue"></i>
+                    <span>telegram</span>
+                </li>
+                <li class="contents">
+                    <i class="fa fa-envelope text blue"></i>
+                    <span>email</span>
+                </li>
+                <li class="contents">
+                    <i class="fa fa-instagram text blue"></i>
+                    <span>instagram</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyRight text white">
+        <span>
+              تمامی حقوق وبسایت متعلق است به انجمن علمی دانشکده کامپیوتر دانشگاه علم و صنعت
+        </span>
+    </div>
+</footer>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

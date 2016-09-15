@@ -1,0 +1,9 @@
+@import "variables";
+
+@media screen and (min-width: $mobileSize){
+  @import "eventsView(desktop)";
+}
+
+@media screen and (max-width: $mobileSize) {
+  @import "eventsView(phone)";
+}
