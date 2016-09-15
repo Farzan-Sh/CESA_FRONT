@@ -219,8 +219,6 @@
       -webkit-box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
       -moz-box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
       box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5); }
-      .main .article:hover .contents .description .title {
-        color: #1da7ff; }
     .main .article button {
       position: absolute;
       left: 20px;
@@ -255,7 +253,7 @@
         .main .article .contents .description .title {
           width: 100%;
           text-align: right;
-          color: #333333;
+          color: #1da7ff;
           -webkit-transition: all 0.2s;
           -moz-transition: all 0.2s;
           -ms-transition: all 0.2s;
