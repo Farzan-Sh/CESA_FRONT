@@ -54,7 +54,7 @@
         overflow: hidden;
       }
     }
-    input{
+    input[type=text] , input[type=password] , input[type=email] , input[type=tel]{
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
@@ -78,6 +78,48 @@
       -ms-transition: all 0.2s;
       -o-transition: all 0.2s;
       transition: all 0.2s;
+    }
+    input[type=checkbox]:not(old){
+      position: absolute;
+      width   : 28px;
+      margin  : 0;
+      padding : 0;
+      opacity : 0;
+    }
+    input[type=checkbox]:not(old) + label{
+      display      : inline-block;
+      margin-left  : -28px;
+      padding-left : 28px;
+      background   : url('checks.png') no-repeat 0 0;
+      line-height  : 24px;
+    }
+    input[type=checkbox]:not(old):checked + label{
+      background-position : 0 -24px;
+    }
+    input[type=checkbox]:not(old){
+      width     : 2em;
+      margin    : 0;
+      padding   : 0;
+      font-size : 1em;
+      opacity   : 0;
+    }
+    input[type=checkbox]:not(old) + label{
+      display      : inline-block;
+      margin-left  : -2em;
+      line-height  : 1.5em;
+    }
+    input[type=checkbox]:not(old) + label > span{
+      display          : inline-block;
+      width            : 0.85em;
+      height           : 0.85em;
+      margin           : 0.25em 0.5em 0.25em 0.25em;
+      border           : 2px solid $darkGray;
+      border-radius    : 100%;
+      background       : $white;
+      vertical-align   : bottom;
+    }
+    input[type=checkbox]:not(old):checked + label > span{
+      background-color: $orange;
     }
   }
   .container{
@@ -103,6 +145,9 @@
     p{
       width: 100%;
     }
+    #captcha {
+      width: 100%;
+    }
   }
   #forgotPass{
     text-align: center;
@@ -116,6 +161,9 @@
     &:hover{
       color: $blue;
     }
+  }
+  #studentNumber {
+    display: none;
   }
   .alert{
     font-size: 0.9em;
