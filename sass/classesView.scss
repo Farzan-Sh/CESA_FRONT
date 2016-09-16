@@ -1,0 +1,9 @@
+@import "variables";
+
+@media screen and (min-width: $mobileSize){
+  @import "classesView(desktop)";
+}
+
+@media screen and (max-width: $mobileSize) {
+  @import "classesView(phone)";
+}

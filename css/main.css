@@ -80,6 +80,18 @@ html {
       line-height: 35px; }
     .button.blue:hover {
       background-color: #008ee9; }
+  .button.orange {
+    background-color: #f06305;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .button.orange span {
+      color: #333333;
+      line-height: 35px; }
+    .button.orange:hover {
+      background-color: #be4e04; }
 
 .main {
   float: right;

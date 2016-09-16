@@ -97,6 +97,22 @@ html{
       background-color: darken($blue , 10%);
     }
   }
+  &.orange {
+    background-color: $orange;
+    span{
+      color: $darkGray;
+      line-height: 35px;
+    }
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover{
+      background-color: darken($orange , 10%);
+    }
+  }
+
 }
 
 .main{
