@@ -120,6 +120,14 @@
               };
               background-color: $gray;
               line-height: 35px;
+              &.blue{
+                background-color: $blue;
+                color: $white;
+              }
+              &.orange{
+                background-color: $orange;
+                color: $darkGray;
+              }
             }
           }
         }

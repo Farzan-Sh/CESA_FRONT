@@ -88,10 +88,10 @@ html {
     -o-transition: all 0.2s;
     transition: all 0.2s; }
     .button.orange span {
-      color: #333333;
+      color: #000;
       line-height: 35px; }
     .button.orange:hover {
-      background-color: #be4e04; }
+      background-color: #fb7f2d; }
 
 .main {
   float: right;

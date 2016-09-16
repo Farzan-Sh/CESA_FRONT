@@ -100,7 +100,7 @@ html{
   &.orange {
     background-color: $orange;
     span{
-      color: $darkGray;
+      color: #000;
       line-height: 35px;
     }
     -webkit-transition: all 0.2s;
@@ -109,7 +109,7 @@ html{
     -o-transition: all 0.2s;
     transition: all 0.2s;
     &:hover{
-      background-color: darken($orange , 10%);
+      background-color: lighten($orange , 10%);
     }
   }
 
