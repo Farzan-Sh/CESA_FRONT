@@ -64,6 +64,9 @@ header{
       }
     }
   }
+  .openMenu{
+    display: none;
+  }
   .menu{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -287,6 +290,10 @@ footer {
       transform: translateX(50%);
     }
   }
+}
+
+.mobileMenu {
+  display: none;
 }
 
 @keyframes topToDown {

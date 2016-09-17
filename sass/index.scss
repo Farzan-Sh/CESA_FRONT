@@ -1,9 +1,9 @@
 @import "variables";
 
-@media screen and (min-width: $mobileSize){
+@media screen and (min-width: $desktopSize){
   @import "index(desktop)";
 }
 
-@media screen and (max-width: $mobileSize) {
+@media screen and (max-width: $desktopSize) {
   @import "index(phone)";
 }

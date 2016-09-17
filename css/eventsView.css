@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #wrapper * {
     float: none; }
 
@@ -153,10 +153,10 @@
     /*-ms-transform: translateX(50%);*/
     /*-o-transform: translateX(50%);*/
     /*transform: translateX(50%);*/ } }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1024px) and (max-width: 1023px) {
   .comment form {
     width: 100%; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .comment button {
     background-color: #339999;
     border: none;
@@ -182,7 +182,7 @@
     padding-left: 0;
     width: 100%;
     resize: vertical; } }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1024px) and (max-width: 1023px) {
   #wrapper {
     margin: auto 5% 100px; }
 
@@ -192,7 +192,7 @@
 
   #wrapper #content table {
     width: 100%; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .main .article {
     position: relative;
     overflow: hidden;

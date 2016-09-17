@@ -1,10 +1,10 @@
 @import "defaults";
 @import "variables";
 
-@media screen and (min-width: $mobileSize){
+@media screen and (min-width: $desktopSize){
   @import "main(desktop)";
 }
 
-@media screen and (max-width: $mobileSize) {
+@media screen and (max-width: $desktopSize) {
   @import "main(phone)";
 }
