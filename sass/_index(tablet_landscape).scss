@@ -1,12 +1,13 @@
 .main{
-  width: $desktopSize;
-  max-width: $desktopSize;
-  margin: {
-    right:calc((100% - 1024px) / 2);
-    left:calc((100% - 1024px) / 2);
-    top: 30px;
-    bottom: 30px;
-  };
+  float: right;
+  position: relative;
+  width: calc(100% - 20px);
+  max-width: 1024px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: calc(100% - (160px + 200px));
   .article{
     position: relative;
     overflow: hidden;
@@ -99,7 +100,6 @@
           -ms-transition: all 0.2s;
           -o-transition: all 0.2s;
           transition: all 0.2s;
-          //height: 40px;
           background-color: $lightGray;
           font-size: 1.1em;
           h4{

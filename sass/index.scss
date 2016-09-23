@@ -1,9 +1,17 @@
 @import "variables";
-
-@media screen and (min-width: $desktopSize){
-  @import "index(desktop)";
+////mobile
+@media screen and (max-width: $mobileSize - 1 ){
+  @import "index(phone)";
+}
+//tablet
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: landscape){
+  @import "index(tablet_landscape)";
+}
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: portrait){
+  @import "index(tablet)";
 }
 
-@media screen and (max-width: $desktopSize) {
-  @import "index(phone)";
+////desktop
+@media screen and (min-width: $desktopSize) {
+  @import "index(desktop)";
 }

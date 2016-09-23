@@ -1,10 +1,19 @@
 @import "defaults";
 @import "variables";
 
-@media screen and (min-width: $desktopSize){
-  @import "main(desktop)";
+////mobile
+@media screen and (max-width: $mobileSize - 1 ){
+  @import "main(phone)";
+}
+//tablet
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: landscape){
+  @import "main(tablet_landscape)";
+}
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: portrait){
+  @import "main(tablet)";
 }
 
-@media screen and (max-width: $desktopSize) {
-  @import "main(phone)";
+////desktop
+@media screen and (min-width: $desktopSize) {
+  @import "main(desktop)";
 }
