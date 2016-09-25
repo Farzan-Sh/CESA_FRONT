@@ -125,6 +125,9 @@ header{
       }
     }
   }
+  .mobileMenu {
+    display: none;
+  }
 }
 
 footer {
@@ -191,6 +194,9 @@ footer {
           }
           span{
             margin-right: 10px;
+          }
+          a{
+            color: $lightGray;
           }
         }
       }
@@ -297,10 +303,6 @@ footer {
       transform: translateX(50%);
     }
   }
-}
-
-.mobileMenu {
-  display: none;
 }
 
 @keyframes topToDown {

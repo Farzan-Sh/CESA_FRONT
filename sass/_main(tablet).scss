@@ -75,7 +75,7 @@ header{
       margin-left: 10px;
       font-size: 1.3em;
     }
-    .fa-chevron-down{
+    .fa-chevron-down , .fa-chevron-up{
       margin-left: 25px;
     }
     &.scrolled {
@@ -85,6 +85,59 @@ header{
   }
   .menu{
     display: none;
+  }
+  .mobileMenu {
+    display: none;
+    //float: none;
+    width: 100%;
+    background-color: #333333;
+    height: auto;
+    //position: fixed;
+    z-index: +105;
+    //top: 175px;
+    .contents {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      border-top: 2px solid $blue;
+      //padding: 0;
+      margin: {
+        top:0;
+        bottom: 0;
+      };
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      };
+      .content{
+        display: block;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        a{
+          color: $white;
+          //width: 100%;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+          &:hover{
+            color: $orange;
+          }
+        }
+        i{
+          color: $blue;
+        }
+      }
+    }
+    &.scrolled {
+      position: fixed;
+      top: 39px;
+    }
   }
 }
 
@@ -144,6 +197,9 @@ footer {
           }
           span{
             margin-right: 10px;
+          }
+          a{
+            color: $lightGray;
           }
         }
       }
@@ -232,17 +288,6 @@ footer {
 
 .main {
   margin-top: 0;
-}
-
-.mobileMenu {
-  float: none;
-  width: 80%;
-  background-color: $darkGray;
-  height: 100%;
-  position: fixed;
-  //display: none;
-  margin-right: -1000px;
-  z-index: +105;
 }
 
 @keyframes topToDown {

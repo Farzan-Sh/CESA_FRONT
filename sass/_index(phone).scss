@@ -97,8 +97,12 @@
         .date {
           color: darken($gray , 10%);
           width:100%;
+          .number{
+            padding-right: 5px;
+          }
         }
         p{
+          width: 100%;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box;

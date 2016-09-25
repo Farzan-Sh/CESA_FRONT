@@ -39,13 +39,6 @@
       -webkit-box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
       -moz-box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
       box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
-      .contents{
-        .description{
-          .title{
-            color: $blue;
-          }
-        }
-      }
     }
     button{
       position: absolute;
@@ -106,18 +99,28 @@
             position: relative;
             right: 30px;
           }
+          &:hover{
+            color: $blue;
+          }
         }
         .date {
           color: darken($gray , 10%);
           position: relative;
           right: 30px;
+          .number {
+            padding-right: 5px;
+          }
         }
         p{
+          width: 100%;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box;
-          padding-top: 5px;
-          padding-bottom: 5px;
+          padding:{
+            top: 5px;
+            right: 10px;
+            bottom: 5px;
+          };
         }
       }
     }
