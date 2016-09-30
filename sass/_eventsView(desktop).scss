@@ -201,6 +201,14 @@
 }
 
 .main{
+  width: $desktopSize;
+  max-width: $desktopSize;
+  margin: {
+    right:calc((100% - 1024px) / 2);
+    left:calc((100% - 1024px) / 2);
+    top: 30px;
+    bottom: 30px;
+  };
   .article{
     position: relative;
     overflow: hidden;
@@ -233,12 +241,6 @@
       -webkit-box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
       -moz-box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
       box-shadow: 0 5px 20px -10px rgba(68, 68, 68, 0.5);
-    }
-    button{
-      position: absolute;
-      left: 20px;
-      top: 20px;
-      z-index: +98;
     }
     .contents{
       width: 100%;
@@ -278,33 +280,43 @@
         width: calc(100% - 175px);
         font-size: 0.95em;
         .title{
-          width:100%;
+          width:calc(100% - 100px);
           text-align: right;
-          color: $blue;
+          color: $darkGray;
           -webkit-transition: all 0.2s;
           -moz-transition: all 0.2s;
           -ms-transition: all 0.2s;
           -o-transition: all 0.2s;
           transition: all 0.2s;
-          height: 40px;
+          //height: 40px;
           background-color: $lightGray;
           font-size: 1.1em;
           h4{
             position: relative;
             right: 30px;
           }
+          &:hover{
+            color: $blue;
+          }
         }
         .date {
           color: darken($gray , 10%);
           position: relative;
           right: 30px;
+          .number {
+            padding-right: 5px;
+          }
         }
         p{
+          width: 100%;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box;
-          padding-top: 5px;
-          padding-bottom: 5px;
+          padding:{
+            top: 5px;
+            right: 10px;
+            bottom: 5px;
+          };
         }
       }
     }

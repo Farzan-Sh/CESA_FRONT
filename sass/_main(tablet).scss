@@ -147,7 +147,7 @@ footer {
   position: relative;
   bottom: 0;
   background-color: $darkGray;
-  border-top:5px solid $blue;
+  border-top:5px solid darken($darkGray,10%);
   .footer{
     position: relative;
     float: right;

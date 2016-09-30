@@ -1,9 +1,225 @@
 @import "variables";
-
-@media screen and (min-width: $desktopSize){
-  @import "login(desktop)";
+////mobile
+@media screen and (max-width: $mobileSize - 1 ){
+  .main{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .input{
+    margin: {
+      right:0 !important;
+      left:0 !important;
+    };
+    width: 100% !important;
+  }
+}
+//tablet
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: landscape){
+  .main{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: portrait){
+  .main{
+    float: right;
+    position: relative;
+    width: 90%;
+    max-width: 1024px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: calc(100% - (160px + 200px));
+  }
 }
 
-@media screen and (max-width: $desktopSize) {
-  @import "login(phone)";
+////desktop
+@media screen and (min-width: $desktopSize) {
+  .main{
+    width: $desktopSize;
+    max-width: $desktopSize;
+    margin: {
+      right:calc((100% - 1024px) / 2);
+      left:calc((100% - 1024px) / 2);
+      top: 30px;
+      bottom: 30px;
+    };
+  }
+}
+.box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  margin: {
+    left:auto;
+    right:auto;
+  };
+  position: relative;
+  right:50%;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
+  box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.6);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  .input{
+    position: relative;
+    width: 80%;
+    margin: {
+      right:10%;
+      left:10%;
+      top: 10px;
+      bottom: 10px;
+    };
+    .label{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 40px;
+      max-width: 40px;
+      height: 40px;
+      background-color: $gray;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      i{
+        color: $darkGray;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        line-height: 40px;
+        width: 40px;
+        text-align: center;
+        overflow: hidden;
+      }
+    }
+    input[type=text] , input[type=password] , input[type=email] , input[type=tel]{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 40px;
+      line-height: 40px;
+      width: calc(100% - 40px);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius:5px;
+      border:{
+        top:2px solid $gray;
+        bottom:2px solid $gray;
+        left:2px solid $gray;
+        right:none;
+      };
+      padding: {
+        right:20px;
+      };
+      outline: none;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    input[type=checkbox]:not(old){
+      position: absolute;
+      width   : 28px;
+      margin  : 0;
+      padding : 0;
+      opacity : 0;
+    }
+    input[type=checkbox]:not(old) + label{
+      display      : inline-block;
+      margin-left  : -28px;
+      padding-left : 28px;
+      background   : url('checks.png') no-repeat 0 0;
+      line-height  : 24px;
+    }
+    input[type=checkbox]:not(old):checked + label{
+      background-position : 0 -24px;
+    }
+    input[type=checkbox]:not(old){
+      width     : 2em;
+      margin    : 0;
+      padding   : 0;
+      font-size : 1em;
+      opacity   : 0;
+    }
+    input[type=checkbox]:not(old) + label{
+      display      : inline-block;
+      margin-left  : -2em;
+      line-height  : 1.5em;
+    }
+    input[type=checkbox]:not(old) + label > span{
+      display          : inline-block;
+      width            : 0.85em;
+      height           : 0.85em;
+      margin           : 0.25em 0.5em 0.25em 0.25em;
+      border           : 2px solid $darkGray;
+      border-radius    : 100%;
+      background       : $white;
+      vertical-align   : bottom;
+    }
+    input[type=checkbox]:not(old):checked + label > span{
+      background-color: $orange;
+    }
+  }
+  .container{
+    width: 100%;
+    margin-top: 5px;
+    position: relative;
+    button , a{
+      position: relative;
+      right:50%;
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      transform: translateX(50%);
+      width: 100px;
+      span{
+        width: 100%;
+        text-align: center;
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+    p{
+      width: 100%;
+    }
+    #captcha {
+      width: 100%;
+    }
+  }
+  #forgotPass{
+    text-align: center;
+    color: darken($gray , 15%);
+    font-size: 0.85em;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover{
+      color: $blue;
+    }
+  }
+  #studentNumber {
+    display: none;
+  }
+  .alert{
+    font-size: 0.9em;
+    text-align: center;
+  }
 }

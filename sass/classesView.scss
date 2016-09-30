@@ -1,9 +1,17 @@
 @import "variables";
-
-@media screen and (min-width: $desktopSize){
-  @import "classesView(desktop)";
+////mobile
+@media screen and (max-width: $mobileSize - 1 ){
+  @import "classesView(phone)";
+}
+//tablet
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: landscape){
+  @import "classesView(tablet_landscape)";
+}
+@media screen and (min-width: $mobileSize) and (max-width: $desktopSize - 1) and (orientation: portrait){
+  @import "classesView(tablet)";
 }
 
-@media screen and (max-width: $desktopSize) {
-  @import "classesView(phone)";
+////desktop
+@media screen and (min-width: $desktopSize) {
+  @import "classesView(desktop)";
 }

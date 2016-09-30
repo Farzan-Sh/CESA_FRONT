@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link href="css/classView.css" rel="stylesheet" type="text/css">
+    <link href="css/classesView.css" rel="stylesheet" type="text/css">
     <link href="libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="libraries/animation.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -25,13 +25,25 @@
             </h3>
         </div>
     </div>
+    <div class="openMenu">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-chevron-down left"></i>
+    </div>
     <div class="menu">
         <div class="contents">
-            <div class="content"> <a href="/">خانه</a></div>
+            <div class="content"><a href="/">خانه</a></div>
             <div class="content"><a href="/classes">کلاس ها و کارگاه ها</a></div>
-            <div class="content"><a href="/user/authenticate">ورود</a></div>
-            <div class="content"><a href="/user/authenticate">عضویت</a></div>
+            <div class="content" id="openLoginBox"><a href="#">ورود</a></div>
+            <div class="content"><a href="#">عضویت</a></div>
         </div>
+    </div>
+    <div class="mobileMenu">
+        <ul class="contents">
+            <li class="content"><a href="#">خانه</a></li>
+            <li class="content"><a href="#">کلاس ها و کارگاه ها</a></li>
+            <li class="content"><a href="#">ورود</a></li>
+            <li class="content"><a href="#">عضویت</a></li>
+        </ul>
     </div>
 </header>
 <div class="main">
@@ -39,6 +51,9 @@
         <div class="contents">
             <img src="img/lab.jpg" class="image">
             <div class="description">
+                <button class="button blue" style="height: 37px ; left: 21px;">
+                    <span>شرکت در کلاس</span>
+                </button>
                 <div class="title">
                     <h4>اینجا کسیست پنهان</h4>
                 </div>
@@ -47,9 +62,6 @@
                         <td>ظرفیت: 90 نفر</td>
                         <td>قیمت: 200 تومان</td>
                         <td>تاریخ شروع: 85/85/85</td>
-                        <td id="join">
-                            <a href="">شرکت در کلاس</a>
-                        </td>
                     </tr>
                 </table>
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای</p>
@@ -139,15 +151,15 @@ print add(“Hello, “,”world!”)
             <ul class="social">
                 <li class="contents">
                     <i class="fa fa-paper-plane text blue"></i>
-                    <span>telegram</span>
+                    <a href=""><span>telegram</span></a>
                 </li>
                 <li class="contents">
                     <i class="fa fa-envelope text blue"></i>
-                    <span>email</span>
+                    <a href=""><span>email</span></a>
                 </li>
                 <li class="contents">
                     <i class="fa fa-instagram text blue"></i>
-                    <span>instagram</span>
+                    <a href=""><span>instagram</span></a>
                 </li>
             </ul>
         </div>

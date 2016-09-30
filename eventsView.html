@@ -25,13 +25,25 @@
             </h3>
         </div>
     </div>
+    <div class="openMenu">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-chevron-down left"></i>
+    </div>
     <div class="menu">
         <div class="contents">
-            <div class="content"> <a href="/">خانه</a></div>
+            <div class="content"><a href="/">خانه</a></div>
             <div class="content"><a href="/classes">کلاس ها و کارگاه ها</a></div>
-            <div class="content"><a href="/user/authenticate">ورود</a></div>
-            <div class="content"><a href="/user/authenticate">عضویت</a></div>
+            <div class="content" id="openLoginBox"><a href="#">ورود</a></div>
+            <div class="content"><a href="#">عضویت</a></div>
         </div>
+    </div>
+    <div class="mobileMenu">
+        <ul class="contents">
+            <li class="content"><a href="#">خانه</a></li>
+            <li class="content"><a href="#">کلاس ها و کارگاه ها</a></li>
+            <li class="content"><a href="#">ورود</a></li>
+            <li class="content"><a href="#">عضویت</a></li>
+        </ul>
     </div>
 </header>
 <div class="main">
@@ -115,7 +127,7 @@ print add(“Hello, “,”world!”)
                 درباره ما
             </h3>
             <p class="content">
-                 و حومه و این حرفا است و بود و خواهد بود لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                و حومه و این حرفا است و بود و خواهد بود لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
             <h5 class="text blue">
                 <a href="#">
@@ -133,15 +145,15 @@ print add(“Hello, “,”world!”)
             <ul class="social">
                 <li class="contents">
                     <i class="fa fa-paper-plane text blue"></i>
-                    <span>telegram</span>
+                    <a href=""><span>telegram</span></a>
                 </li>
                 <li class="contents">
                     <i class="fa fa-envelope text blue"></i>
-                    <span>email</span>
+                    <a href=""><span>email</span></a>
                 </li>
                 <li class="contents">
                     <i class="fa fa-instagram text blue"></i>
-                    <span>instagram</span>
+                    <a href=""><span>instagram</span></a>
                 </li>
             </ul>
         </div>

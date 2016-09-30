@@ -97,10 +97,10 @@
   .main {
     float: right;
     position: relative;
-    width: calc(100% - 20px);
+    width: 90%;
     max-width: 1024px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
     min-height: calc(100% - (160px + 200px)); }
@@ -191,9 +191,9 @@
             padding-right: 10px; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
   .main {
-    width: calc(100% - 20px);
-    margin-right: 10px;
-    margin-left: 10px;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
     margin-top: 20px; }
     .main .article {
       position: relative;
