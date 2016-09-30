@@ -99,6 +99,7 @@
             float: none;
           }
           max-width: 100%;
+          width: calc(100% - 100px);
           tr{
             text-align: center;
             width: 25%;
@@ -146,6 +147,62 @@
           box-sizing: border-box;
           padding-top: 5px;
           padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  .paginator{
+    margin: {
+      top: 20px;
+    };
+    width: 100%;
+    *{
+      float: left;
+    }
+    .paginateBox{
+      padding: 0;
+      margin: 0;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      a{
+        display: inline-block;
+        margin: {
+          right: 5px;
+          left: 5px;
+        };
+
+        &.text , &.number {
+          cursor: pointer;
+          height: 40px;
+          width: 40px;
+          border-radius:100%;
+          background-color: $lightGray;
+          text-align: center;
+          -webkit-box-shadow: 0 5px 20px -15px rgba(68, 68, 68, 0.5);
+          -moz-box-shadow: 0 5px 20px -15px rgba(68, 68, 68, 0.5);
+          box-shadow: 0 5px 20px -15px rgba(68, 68, 68, 0.5);
+        }
+        &.text{
+          font-size: 0.9em;
+        }
+        &.number{
+          font-size: 1.1em;
+        }
+        &.active{
+          color: $blue;
+        }
+        &:hover{
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+          color: $blue;
         }
       }
     }

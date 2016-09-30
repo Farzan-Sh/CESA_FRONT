@@ -1,5 +1,10 @@
+// persian numbers
+$(document).ready(function () {
+    $('body').persiaNumber();
+});
+
 $(window).on('scroll', function () {
-    if ( window.innerWidth >= 1024 ) {
+    if ( window.innerWidth >= 768 ) {
         if ($(window).scrollTop() > 120) {
             $('.menu').addClass('scrolled');
             $('.header').hide();
@@ -12,11 +17,34 @@ $(window).on('scroll', function () {
     else {
         if ($(window).scrollTop() > 50) {
             $('.openMenu , .mobileMenu').addClass('scrolled');
-            // $('.header').hide();
+            $('.header').hide();
         }
         else {
             $('.openMenu , .mobileMenu').removeClass('scrolled');
-            // $('.header').show();
+            $('.header').show();
+        }
+    }
+});
+$(window).resize(function () {
+    console.log(window.innerWidth);
+    if (window.innerWidth < 768 ) {
+        if ($(window).scrollTop() > 50) {
+            $('.openMenu , .mobileMenu').addClass('scrolled');
+            $('.header').hide();
+        }
+        else {
+            $('.openMenu , .mobileMenu').removeClass('scrolled');
+            $('.header').show();
+        }
+    }
+    else {
+        if ($(window).scrollTop() > 120) {
+            $('.menu').addClass('scrolled');
+            $('.header').hide();
+        }
+        else {
+            $('.menu').removeClass('scrolled');
+            $('.header').show();
         }
     }
 });
